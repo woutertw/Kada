@@ -4,17 +4,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kada", "Kada\Kada.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{97E2B4B0-F21D-4560-B760-5523A341C827} = {97E2B4B0-F21D-4560-B760-5523A341C827}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QTile", "QTile\QTile.vcxproj", "{97E2B4B0-F21D-4560-B760-5523A341C827}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Release|x64 = Release|x64
+		widget|x64 = widget|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.ActiveCfg = Debug|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.Build.0 = Debug|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.ActiveCfg = Release|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.Build.0 = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.widget|x64.ActiveCfg = Debug|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.widget|x64.Build.0 = Debug|x64
+		{97E2B4B0-F21D-4560-B760-5523A341C827}.Debug|x64.ActiveCfg = Release|x64
+		{97E2B4B0-F21D-4560-B760-5523A341C827}.Debug|x64.Build.0 = Release|x64
+		{97E2B4B0-F21D-4560-B760-5523A341C827}.Release|x64.ActiveCfg = Release|x64
+		{97E2B4B0-F21D-4560-B760-5523A341C827}.Release|x64.Build.0 = Release|x64
+		{97E2B4B0-F21D-4560-B760-5523A341C827}.widget|x64.ActiveCfg = Release|x64
+		{97E2B4B0-F21D-4560-B760-5523A341C827}.widget|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

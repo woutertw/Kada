@@ -5,3 +5,8 @@ Kada::Kada(QWidget *parent)
 {
 	ui.setupUi(this);
 }
+
+
+void Kada::on_BananaTile_clicks() {
+	
+	}	

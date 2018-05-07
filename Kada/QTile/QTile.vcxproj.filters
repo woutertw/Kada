@@ -14,10 +14,6 @@
       <Extensions>qrc;*</Extensions>
       <ParseFiles>false</ParseFiles>
     </Filter>
-    <Filter Include="Form Files">
-      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
-      <Extensions>ui</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
       <Extensions>qrc;*</Extensions>
@@ -28,42 +24,35 @@
       <Extensions>moc;h;cpp</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
-    <Filter Include="Custom plugins">
-      <UniqueIdentifier>{3598e1a0-41e6-43a9-ba4e-638bfde7d260}</UniqueIdentifier>
+    <Filter Include="Other Files">
+      <UniqueIdentifier>{B67473BF-9FA1-4674-831E-CB28F72D4791}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>true</ParseFiles>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="QTile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Kada.cpp">
+    <ClCompile Include="QTilePlugin.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\QTile\QTilePlugin.cpp">
-      <Filter>Custom plugins</Filter>
-    </ClCompile>
-    <ClCompile Include="..\QTile\QTile.cpp">
-      <Filter>Custom plugins</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="Kada.h">
+    <QtMoc Include="QTilePlugin.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="..\QTile\QTilePlugin.h">
-      <Filter>Custom plugins</Filter>
-    </QtMoc>
-    <QtMoc Include="..\QTile\QTile.h">
-      <Filter>Custom plugins</Filter>
+    <QtMoc Include="QTile.h">
+      <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="Kada.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
+    <None Include="qtileplugin.json">
+      <Filter>Other Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="..\QTile\image.qrc">
+    <QtRcc Include="image.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
   </ItemGroup>
