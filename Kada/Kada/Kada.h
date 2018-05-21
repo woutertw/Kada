@@ -14,8 +14,5 @@ public:
 	Kada(QWidget *parent = Q_NULLPTR);
 
 private:
-	Ui::KadaClass ui;
-
-
-	
+	Ui::KadaClass ui;	
 };
