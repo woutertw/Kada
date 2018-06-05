@@ -13,6 +13,8 @@ class Kada : public QMainWindow
 public:
 	Kada(QWidget *parent = Q_NULLPTR);
 
+	void on_musicTile_clicked(void);
+
 private:
 	Ui::KadaClass ui;	
 };

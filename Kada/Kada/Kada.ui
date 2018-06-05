@@ -6,25 +6,57 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>412</width>
-    <height>275</height>
+    <width>705</width>
+    <height>425</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Kada</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QTile" name="BananaTile">
+   <widget class="QTile" name="statisticsTile">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
+      <x>530</x>
+      <y>130</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+    <property name="Imageid" stdset="0">
+     <string>statistics</string>
+    </property>
+   </widget>
+   <widget class="QTile" name="settingsTile">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>130</y>
       <width>100</width>
       <height>100</height>
      </rect>
     </property>
     <property name="Imageid" stdset="0">
-     <string>banana</string>
+     <string>settings</string>
+    </property>
+   </widget>
+   <widget class="QTile" name="musicTile">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>130</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="Imageid" stdset="0">
+     <string>music</string>
     </property>
    </widget>
   </widget>
@@ -33,7 +65,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>412</width>
+     <width>705</width>
      <height>26</height>
     </rect>
    </property>
