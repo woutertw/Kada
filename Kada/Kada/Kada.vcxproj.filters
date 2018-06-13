@@ -45,6 +45,9 @@
     <ClCompile Include="..\QTile\QTile.cpp">
       <Filter>Custom plugins</Filter>
     </ClCompile>
+    <ClCompile Include="QtaddDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Kada.h">
@@ -56,9 +59,15 @@
     <QtMoc Include="..\QTile\QTile.h">
       <Filter>Custom plugins</Filter>
     </QtMoc>
+    <QtMoc Include="QtaddDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="Kada.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="QtaddDialog.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

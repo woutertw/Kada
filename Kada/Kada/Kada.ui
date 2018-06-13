@@ -93,6 +93,7 @@
  </resources>
  <connections/>
  <slots>
+  <signal>clicked()</signal>
   <slot>clicks()</slot>
  </slots>
 </ui>
