@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>705</width>
-    <height>425</height>
+    <width>1280</width>
+    <height>800</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QTile" name="statisticsTile">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>130</y>
+      <x>1017</x>
+      <y>300</y>
       <width>100</width>
       <height>100</height>
      </rect>
@@ -36,8 +36,8 @@
    <widget class="QTile" name="settingsTile">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>130</y>
+      <x>163</x>
+      <y>300</y>
       <width>100</width>
       <height>100</height>
      </rect>
@@ -49,14 +49,14 @@
    <widget class="QTile" name="musicTile">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>130</y>
+      <x>590</x>
+      <y>300</y>
       <width>100</width>
       <height>100</height>
      </rect>
     </property>
     <property name="Imageid" stdset="0">
-     <string>music</string>
+     <string>musicc</string>
     </property>
    </widget>
   </widget>
@@ -65,7 +65,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>705</width>
+     <width>1280</width>
      <height>26</height>
     </rect>
    </property>
@@ -95,5 +95,6 @@
  <slots>
   <signal>clicked()</signal>
   <slot>clicks()</slot>
+  <slot>slot1()</slot>
  </slots>
 </ui>

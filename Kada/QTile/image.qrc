@@ -9,5 +9,7 @@
         <file>Images/settings2.png</file>
         <file>Images/statistics1.png</file>
         <file>Images/statistics2.png</file>
+        <file>Images/musicc1.png</file>
+        <file>Images/musicc2.png</file>
     </qresource>
 </RCC>

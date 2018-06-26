@@ -134,10 +134,15 @@
     <ClCompile Include="Kada.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="QtaddDialog.cpp" />
+    <ClCompile Include="settingsDialog.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="Kada.ui" />
     <QtUic Include="QtaddDialog.ui">
+      <ExecutionDescription Condition="'$(Configuration)|$(Platform)'=='widget|x64'">Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='widget|x64'">.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtUic Include="settingsDialog.ui">
       <ExecutionDescription Condition="'$(Configuration)|$(Platform)'=='widget|x64'">Uic'ing %(Identity)...</ExecutionDescription>
       <OutputFile Condition="'$(Configuration)|$(Platform)'=='widget|x64'">.\GeneratedFiles\ui_%(Filename).h</OutputFile>
     </QtUic>
@@ -162,6 +167,15 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="QtaddDialog.h">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='widget|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription Condition="'$(Configuration)|$(Platform)'=='widget|x64'">Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='widget|x64'">.\GeneratedFiles</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtHelp;$(QTDIR)\include\QtQml;$(QTDIR)\include\QtSerialBus;$(QTDIR)\include\QtSerialPort;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtSvg;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtXmlPatterns</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtHelp;$(QTDIR)\include\QtQml;$(QTDIR)\include\QtSerialBus;$(QTDIR)\include\QtSerialPort;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtSvg;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtXmlPatterns</IncludePath>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="settingsDialog.h">
       <OutputFile Condition="'$(Configuration)|$(Platform)'=='widget|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
       <ExecutionDescription Condition="'$(Configuration)|$(Platform)'=='widget|x64'">Moc'ing %(Identity)...</ExecutionDescription>
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='widget|x64'">.\GeneratedFiles</IncludePath>

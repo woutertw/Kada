@@ -28,12 +28,13 @@ public:
     {
         if (QtaddDialog->objectName().isEmpty())
             QtaddDialog->setObjectName(QStringLiteral("QtaddDialog"));
-        QtaddDialog->resize(400, 300);
+        QtaddDialog->resize(1280, 800);
         bananaTile = new QTile(QtaddDialog);
         bananaTile->setObjectName(QStringLiteral("bananaTile"));
         bananaTile->setGeometry(QRect(90, 110, 100, 100));
 
         retranslateUi(QtaddDialog);
+        QObject::connect(bananaTile, SIGNAL(clicks()), QtaddDialog, SLOT(reject()));
 
         QMetaObject::connectSlotsByName(QtaddDialog);
     } // setupUi

@@ -38,23 +38,23 @@ public:
     {
         if (KadaClass->objectName().isEmpty())
             KadaClass->setObjectName(QStringLiteral("KadaClass"));
-        KadaClass->resize(705, 425);
+        KadaClass->resize(1280, 800);
         centralWidget = new QWidget(KadaClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         statisticsTile = new QTile(centralWidget);
         statisticsTile->setObjectName(QStringLiteral("statisticsTile"));
-        statisticsTile->setGeometry(QRect(530, 130, 100, 100));
+        statisticsTile->setGeometry(QRect(1017, 300, 100, 100));
         statisticsTile->setMinimumSize(QSize(100, 100));
         settingsTile = new QTile(centralWidget);
         settingsTile->setObjectName(QStringLiteral("settingsTile"));
-        settingsTile->setGeometry(QRect(50, 130, 100, 100));
+        settingsTile->setGeometry(QRect(163, 300, 100, 100));
         musicTile = new QTile(centralWidget);
         musicTile->setObjectName(QStringLiteral("musicTile"));
-        musicTile->setGeometry(QRect(300, 130, 100, 100));
+        musicTile->setGeometry(QRect(590, 300, 100, 100));
         KadaClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(KadaClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 705, 26));
+        menuBar->setGeometry(QRect(0, 0, 1280, 26));
         KadaClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(KadaClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -73,7 +73,7 @@ public:
         KadaClass->setWindowTitle(QApplication::translate("KadaClass", "Kada", Q_NULLPTR));
         statisticsTile->setProperty("Imageid", QVariant(QApplication::translate("KadaClass", "statistics", Q_NULLPTR)));
         settingsTile->setProperty("Imageid", QVariant(QApplication::translate("KadaClass", "settings", Q_NULLPTR)));
-        musicTile->setProperty("Imageid", QVariant(QApplication::translate("KadaClass", "music", Q_NULLPTR)));
+        musicTile->setProperty("Imageid", QVariant(QApplication::translate("KadaClass", "musicc", Q_NULLPTR)));
     } // retranslateUi
 
 };
